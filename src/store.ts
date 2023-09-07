@@ -11,7 +11,9 @@ const composeEnhancer: typeof compose = (window as any).__REDUX_DEVTOOLS_EXTENSI
 const sagaMiddleware = createSagaMiddleware()
 
 const store = createStore(
+  //connecting rootReducer with store
   rootReducer,
+  //connecting saga middleware with redux
   composeEnhancer(applyMiddleware(sagaMiddleware)),
 );
 

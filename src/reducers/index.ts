@@ -15,6 +15,7 @@ export const initialState: WeatherState = {
   loading: false,
 };
 
+//root Reducer
 const weatherReducer = (
   state: WeatherState = initialState,
   action: WeatherAction | InitAction,

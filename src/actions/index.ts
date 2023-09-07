@@ -6,6 +6,8 @@ import {
 import { WeatherAction } from '../types/actions';
 import { Weather } from '../types/weather';
 
+//action get data from reactJs and provide it to reducer through store.
+
 export const getWeather = (payload: string): WeatherAction  => ({
   type: GET_WEATHER_REQUEST,
   payload,

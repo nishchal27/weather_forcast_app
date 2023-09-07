@@ -3,7 +3,6 @@ import * as React from 'react';
 import { Weather } from '../../types/weather';
 
 import './WeatherTable.css';
-import WeatherInfo from '../WeatherInfo';
 
 type Props = {
   data: Weather
